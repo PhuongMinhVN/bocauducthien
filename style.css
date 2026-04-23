@@ -72,11 +72,12 @@ nav.scrolled {
 }
 
 .logo {
-    font-size: 1.5rem;
-    color: var(--primary);
+    font-size: 1.6rem;
+    color: var(--white);
     display: flex;
     align-items: center;
     gap: 0.5rem;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.3);
 }
 
 .logo i {
@@ -89,9 +90,17 @@ nav.scrolled {
 }
 
 .nav-links a {
-    font-weight: 500;
-    font-size: 0.95rem;
+    color: var(--white);
+    font-weight: 600;
+    font-size: 1rem;
     position: relative;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+
+nav.scrolled .nav-links a,
+nav.scrolled .logo {
+    color: var(--primary);
+    text-shadow: none;
 }
 
 .nav-links a::after {
